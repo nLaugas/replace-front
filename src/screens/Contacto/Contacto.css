@@ -1,0 +1,58 @@
+.Header1-NoRadius {
+  border-bottom-right-radius: unset;
+  height: max-content;
+}
+
+.Contacto-title{
+  padding-top: 10px;
+}
+
+.Contacto-formContainer{
+  padding: 30px 0;
+}
+
+.ContactoData-container{
+  padding: 30px 0;
+}
+
+.ContactoData-title{
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.Contacto-greyColor{
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (min-width: 1000px){
+  .Contacto-formContainer{
+    max-width: 30vw;
+    padding-right: 10vw;
+  }
+}
+
+.Contacto-mapa-container{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mapa{
+  width: 2000px;
+}
+
+.punto-mapa{
+  width: 35px;
+  top: calc(100vw/9.1);
+  left: calc(47.5vw);
+  position: absolute;
+}
+
+@media screen and (max-width: 1440px){
+  .punto-mapa{
+    top: 130px;
+    left: calc(47.5vw);
+    position: absolute;
+  }
+}

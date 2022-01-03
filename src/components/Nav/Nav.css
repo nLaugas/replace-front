@@ -1,0 +1,107 @@
+.Nav-container {
+  font-size: calc(10px + 2vmin);
+  /* background-color: #333; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0D1117 100%, #211930 100%);
+  height: 150px;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.Nav-img {
+  height: 60px;
+  margin-left: 10vw;
+}
+
+.Nav-responsiveMenu-btn {
+  display: none;
+}
+
+.Nav-btn-container {
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.Nav-btn {
+  color: #ccc;
+  padding: 10px 0;
+  margin: 0 17.5px;
+  font-size: large;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: border 0.1s;
+  cursor: pointer;
+}
+
+.Nav-btn:hover {
+  border-bottom: 2px solid #6E40C9;
+}
+
+.Nav-btn-InScreen{
+  border-bottom: 2px solid #6E40C9;
+}
+
+.Nav-align-center{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1270px) {
+  .Nav-container {
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    min-height: 150px;
+  }
+
+  .Nav-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+  }
+
+  .Nav-responsiveMenu-btn {
+    display: block;
+    padding: 5vw 10vw;
+  }
+
+  .Nav-btn-container {
+    padding: 0;
+    margin: 0 0;
+    width: 100vw;
+    height: 450px;
+    padding: 5vh 0;
+    flex-direction: column;
+    background: linear-gradient(90deg, #0D1117 100%, #211930 100%);
+    transition: all 0.5s;
+  }
+
+  .Nav-btn {
+    padding: 25px 0;
+    margin: 0 10vw;
+  }
+
+  .NoHeight {
+    padding: 0;
+    height: 0 !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Nav-img {
+    height: 40px;
+  }
+
+  .Nav-container {
+    min-height: 90px;
+  }
+
+  .Nav-img-container {
+    height: 90px;
+  }
+}

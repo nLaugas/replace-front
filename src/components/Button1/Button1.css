@@ -1,0 +1,44 @@
+.Button1-btn {
+  background: none;
+  font-style: initial;
+  padding: 0 25px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #6e40c9;
+  display: inline-block;
+  font-weight: 500;
+  transition: all .1s;
+  
+}
+
+.btn-hover-black {
+  position: relative;
+}
+
+.btn-hover-white {
+  position: relative;
+}
+
+.btn-hover-black:hover {
+  background: #6e40c9;
+  color: white !important;
+}
+
+.btn-hover-white:hover {
+  background: white;
+  color: #6e40c9 !important;
+  border: 1px solid white;
+}
+
+/* .btn-hover-black:focus {
+  background: #6e40c9;
+  color: white !important;
+}
+
+.btn-hover-white:focus {
+  background: white;
+  color: #6e40c9 !important;
+  border: 1px solid white;
+} */
+
+

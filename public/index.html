@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .Spinner-container {
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      background: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: 10000000;
+      top: 0;
+      left: 0;
+      transition: all 0.6s;
+    }
+
+    .Spinner-container-hide {
+      color: rgba(255, 255, 255, 0);
+      background: rgba(255, 255, 255, 0);
+      top: -100vh !important;
+    }
+
+    .Spinner-Animation-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .PlaceAnim-container {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .ReLogoAnim {
+      position: relative;
+      animation-name: ReLogo;
+      animation-duration: 2.5s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .PaceAnim {
+      position: relative;
+      animation-name: Pace;
+      animation-duration: 2.5s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .LAnim {
+      position: absolute;
+      left: 24.5%;
+      animation-name: L;
+      animation-duration: 2.5s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes ReLogo {
+      15% {
+        left: 0;
+        height: 100%;
+      }
+      25% {
+        left: 31%;
+        height: 100%;
+      }
+      40% {
+        left: 31%;
+        height: 100%;
+      }
+      50% {
+        left: 28.5%;
+        height: 125%;
+      }
+      65% {
+        left: 28.5%;
+        height: 125%;
+      }
+      75% {
+        left: 31%;
+        height: 100%;
+      }
+
+      90% {
+        left: 31%;
+        height: 100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+    @keyframes L {
+      15% {
+        left: 24.5%;
+        opacity: 1;
+      }
+      25% {
+        left: -20%;
+        opacity: 0;
+      }
+      50% {
+        left: -20%;
+        opacity: 0;
+      }
+      90% {
+        left: -20%;
+        opacity: 0;
+      }
+      100% {
+        left: 24.5%;
+        opacity: 1;
+      }
+    }
+
+    @keyframes Pace {
+      15% {
+        left: 0%;
+        top: 0;
+        opacity: 1;
+      }
+      25% {
+        left: -20%;
+        top: -20px;
+        opacity: 0;
+      }
+      50% {
+        left: -20%;
+        opacity: 0;
+      }
+      90% {
+        left: -20%;
+        top: -20px;
+        opacity: 0;
+      }
+      100% {
+        left: 0;
+        top: 0px;
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <div class="Spinner-container" id="Spinner">
+    <div style="height: 80px" class="Spinner-Animation-container">
+      <img height="80px" src="/svg/ReLogo.svg" class="ReLogoAnim" />
+      <div class="PlaceAnim-container">
+        <img height="40px" src="/svg/L.svg" class="LAnim" />
+        <img height="50px" src="/svg/Pace.svg" class="PaceAnim" />
+      </div>
+    </div>
+  </div>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Replace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://threejs.org/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r82/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.82.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://threejs.org/examples/js/renderers/CSS3DRenderer.js"></script>
+  <script src="https://threejs.org/examples/js/renderers/CSS3DRenderer.js"></script>
+  <script src="https://threejs.org/examples/js/geometries/ConvexGeometry.js"></script>
+  <script src="https://threejs.org/examples/js/utils/BufferGeometryUtils.js"></script>
+  <script src="https://threejs.org/examples/js/math/ConvexHull.js"></script>
+  <script>
+      setTimeout(()=>{
+          var el = document.getElementById("Spinner");
+          el.style.color= "rgba(255, 255, 255, 0)";
+          el.style.background= "rgba(255, 255, 255, 0)";
+          el.style.top= "-100vh";
+      }, 1000);
+  </script>
+</html>

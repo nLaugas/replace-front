@@ -1,0 +1,16 @@
+.ReplaceText-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ReplaceText-text{
+  color: #6E40C9;
+  padding: 0 1vmin;
+}
+
+.ReplaceText-container img{
+  width: .6em;
+}
+
+

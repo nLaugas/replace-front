@@ -1,0 +1,156 @@
+/* .Spinner-container {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100000000000;
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+  animation-name: Back;
+  animation-duration: .3s;
+}
+
+@keyframes Back {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 1);
+  }
+} */
+
+/* .Spinner-container-hide {
+  color: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
+  top: -100vh !important;
+} */
+
+/* .Spinner-Animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.PlaceAnim-container {
+  position: relative;
+  margin-left: 20px;
+}
+
+.ReLogoAnim {
+  position: relative;
+  animation-name: ReLogo;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.PaceAnim {
+  position: relative;
+  animation-name: Pace;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.LAnim {
+  position: absolute;
+  left: 24.5%;
+  animation-name: L;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ReLogo {
+  15% {
+    left: 0;
+    height: 100%;
+  }
+  25% {
+    left: 31%;
+    height: 100%;
+  }
+  40% {
+    left: 31%;
+    height: 100%;
+  }
+  50% {
+    left: 28.5%;
+    height: 125%;
+  }
+  65% {
+    left: 28.5%;
+    height: 125%;
+  }
+  75% {
+    left: 31%;
+    height: 100%;
+  }
+
+  90% {
+    left: 31%;
+    height: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes L {
+  15% {
+    left: 24.5%;
+    opacity: 1;
+  }
+  25% {
+    left: -20%;
+    opacity: 0;
+  }
+  50% {
+    left: -20%;
+    opacity: 0;
+  }
+  90% {
+    left: -20%;
+    opacity: 0;
+  }
+  100% {
+    left: 24.5%;
+    opacity: 1;
+  }
+}
+
+@keyframes Pace {
+  15% {
+    left: 0%;
+    top: 0;
+    opacity: 1;
+  }
+  25% {
+    left: -20%;
+    top: -20px;
+    opacity: 0;
+  }
+  50% {
+    left: -20%;
+    opacity: 0;
+  }
+  90% {
+    left: -20%;
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    top: 0px;
+    opacity: 1;
+  }
+} */

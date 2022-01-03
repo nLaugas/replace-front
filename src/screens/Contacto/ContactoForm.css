@@ -1,0 +1,61 @@
+.card-form {
+  width: 30vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .card-form {
+    width: 80vw;
+  }
+}
+
+.ContactoForm-Quiero {
+  padding: 40px 0 0 0;
+}
+
+.ContactoForm-Quiero-RBContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+.ContactoForm-Quiero-RB {
+  min-height: 15px;
+  min-width: 15px;
+  margin-right: 20px;
+  border: 1px solid #6e40c9;
+  border-radius: 50%;
+}
+
+.ContactoForm-Quiero-RB-selected {
+  background: rgba(110, 64, 201, 0.9);
+}
+
+/* If "sending" this will animate the text.*/
+/* Keyframes for this will be included below.*/
+.mc__alert--sending {
+  color: #ffe000;
+  -webkit-animation: fade-loop 0.8s ease-in-out infinite alternate-reverse both;
+  animation: fade-loop 0.8s ease-in-out infinite alternate-reverse both;
+}
+.mc__alert--success {
+  color: #4ad61d;
+}
+.mc__alert--error {
+  color: #eb4d4d;
+  font-weight: bold;
+  /* This addresses any links the error message includes */
+}
+.mc__alert--error a {
+  /* Select a high contrast color from your brand. */
+  color: #74c8ff;
+  transition: 0.3s ease-in-out;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+.mc__alert--error a:hover {
+  text-decoration: none;
+  opacity: 1;
+}

@@ -1,0 +1,27 @@
+.ContactoForm-container {
+  width: 30vw;
+}
+
+.ContactoForm-inputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.ContactoForm-input {
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid #6e40c9;
+  outline: none;
+}
+
+.ContactoForm-input:focus {
+  border-bottom: 3px solid #ffee04;
+}
+
+@media screen and (max-width: 1000px) {
+  .ContactoForm-container {
+    width: 80vw;
+  }
+}

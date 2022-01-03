@@ -1,0 +1,14 @@
+.Text1-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  position: relative;
+  z-index: 100;
+}
+
+@media (max-width: 1000px) {
+  .Text1-container {
+    max-width: none;
+    width: 80vw;
+  }
+}

@@ -1,0 +1,16 @@
+url: "https://gmail.us20.list-manage.com/subscribe/post";
+
+U: "9903d80e67ce3e16ab78c94b1";
+id: "c0b05f98ff";
+
+Nombre y Apellido
+name: "MERGE1";
+id: "MERGE1";
+
+Email 
+name: "MERGE0";
+id: "MERGE0";
+
+Motivo
+name: "MERGE2";
+id: "MERGE2";

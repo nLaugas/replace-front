@@ -1,0 +1,66 @@
+.Clientes-container {
+  padding: 7vh 10vw;
+  max-width: 100vw;
+  background-color: #F5F5F5;
+  position: relative;
+}
+
+.Clientes-title {
+  color: #aaa;
+  padding-bottom: 20px;
+}
+
+.Cliente-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Cliente-container {
+  display: flex;
+  max-width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.Cliente {
+  padding: 5px 40px;
+}
+
+.Clientes-CubeA {
+  min-width: 5vw;
+  min-height: 100%;
+  background: linear-gradient(to left,  rgba(255, 255, 255, 0), #F5F5F5);
+  position: sticky;
+  left: 0;
+}
+
+.Clientes-CubeB {
+  min-width: 5vw;
+  min-height: 100%;
+  background: linear-gradient(to left, #F5F5F5, rgba(255, 255, 255, 0));
+  position: sticky;
+  right: -1px;
+}
+
+.Arrow{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 15px;
+  border-top: solid 5px;
+  border-right: solid 5px;
+  position: absolute;
+  z-index: 10000000000;
+}
+
+.Arrow.left{
+  transform: rotate(225deg);
+  left: 2.5vw;
+  top: 50%;
+}
+
+.Arrow.right{
+  transform: rotate(45deg);
+  right: 2.5vw;
+  top: 50%;
+}
