@@ -1,5 +1,5 @@
 import "./PreFooter.css";
-import Button1 from "../../../components/Button1/Button1";
+import Button1 from "../Button1/Button1";
 
 function PreFooter() {
   return (

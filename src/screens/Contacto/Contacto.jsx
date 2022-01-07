@@ -4,7 +4,6 @@ import ContactoForm from "./ContactoForm";
 import Header1 from "../../components/Header1/Header1";
 import Text1 from "../../components/Text1/Text1";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import PreFooter from "../Home/PreFooter/PreFooter";
 
 const Contacto = () => {
   const postUrl = `https://gmail.us20.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
@@ -48,7 +47,6 @@ const Contacto = () => {
       <img className="mapa" src="./svg/mapa.svg"></img>
       <img className="punto-mapa" src="./svg/punto-mapa.svg"></img>
     </div>
-    <PreFooter/>
     </>
   );
 };

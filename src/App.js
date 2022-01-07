@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "./index";
 import "./TextFont.css";
 import Home from "./screens/Home/Home";
+import CDE from "./screens/CDE/CDE";
 import Nav from "./components/Nav/Nav";
 import {
   BrowserRouter as Router,
@@ -10,7 +11,9 @@ import {
   Redirect,
 } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import PreFooter from "./components/PreFooter/PreFooter";
 import Contacto from "./screens/Contacto/Contacto";
+import Qs from './screens/Qs/Qs';
 
 function App() {
 
@@ -23,13 +26,13 @@ function App() {
             <Home />
           </Route>
           <Route path="/Quienes_Somos">
-            quienes somos
+            <Qs/>
           </Route>
           <Route path="/Servicios">
             Servicios
           </Route>
           <Route path="/CasosDeExito">
-            Casos de exito!!!
+            <CDE />
           </Route>
           <Route path="/Proyectos">
             Proyectos
@@ -40,6 +43,7 @@ function App() {
           <Redirect from="/*" to="Home" />
         </Switch>
       </div>
+      <PreFooter/>
       <Footer />
     </Router>
     

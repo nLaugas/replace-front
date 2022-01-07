@@ -14,7 +14,7 @@ function Text() {
     <Text1>
       <ReplaceText text="POTENCIÁ TU NEGOCIO" />
       <div className="title start">
-        Hace crecer tu negocio a partir de tus datos
+        Algoritmos para impactar en tu negocio
       </div>
 
       <div className="HeadText-description start description">
