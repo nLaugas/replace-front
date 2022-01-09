@@ -1,13 +1,10 @@
 import "./GeneralLinkButton.css";
-
+import {Link} from "react-router-dom";
 const GeneralLinkButton = (props) => {
   return (
-    <div
-      onClick={() => (window.location.pathname = `${props.href}`)}
-      className={`btn-noselect ${props.className}`}
-    >
+    <Link className={`btn-noselect ${props.className}`} to = {`${props.href}`}>
       {props.children}
-    </div>
+    </Link>
   );
 }
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Nav.css";
 import GeneralLinkButton from "../GeneralLinkButton/GeneralLinkButton";
 
@@ -8,20 +9,22 @@ function Nav() {
 
   const [OnScreen, setOnScreen] = useState(0);
 
+  const location = useLocation();
+
   useEffect(() => {
-    if(window.location.pathname === "/Home" || window.location.pathname === "/undefined") setOnScreen(0);
-    if(window.location.pathname === "/Quienes_somos") setOnScreen(1);
-    if(window.location.pathname === "/Servicios") setOnScreen(2);
-    if(window.location.pathname === "/CasosDeExito") setOnScreen(3);
-    if(window.location.pathname === "/Proyectos") setOnScreen(4);
-    if(window.location.pathname === "/Contacto") setOnScreen(5); 
+    if(location.pathname === "/" || location.pathname === "/undefined") setOnScreen(0);
+    if(location.pathname === "/Quienes_somos") setOnScreen(1);
+    if(location.pathname === "/Servicios") setOnScreen(2);
+    if(location.pathname === "/CasosDeExito") setOnScreen(3);
+    if(location.pathname === "/Proyectos") setOnScreen(4);
+    if(location.pathname === "/Contacto") setOnScreen(5); 
   });
 
   return (
     <div>
       <div className="Nav-container">
         <div className="Nav-img-container">
-            <GeneralLinkButton href="/Home" className="Nav-align-center"><img className="Nav-img" src="./img/Group.png"/></GeneralLinkButton>
+            <GeneralLinkButton href="/" className="Nav-align-center"><img className="Nav-img" src="./img/Group.png"/></GeneralLinkButton>
           <img
             onClick={() => setshowNavbar(!showNavbar)}
             className="Nav-responsiveMenu-btn btn-noselect"
@@ -30,7 +33,7 @@ function Nav() {
           ></img>
         </div>
         <div className={`Nav-btn-container ${showNavbar ? "" : "NoHeight"}`}>
-          <GeneralLinkButton href="/Home" className={`Nav-btn ${OnScreen === 0 ? "Nav-btn-InScreen" : ""}`}>
+          <GeneralLinkButton href="/" className={`Nav-btn ${OnScreen === 0 ? "Nav-btn-InScreen" : ""}`}>
             Inicio
           </GeneralLinkButton>
           <GeneralLinkButton href="/Quienes_somos" className={`Nav-btn ${OnScreen === 1 ? "Nav-btn-InScreen" : ""}`}>

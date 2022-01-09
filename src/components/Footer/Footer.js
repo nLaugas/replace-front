@@ -6,16 +6,16 @@ function Footer() {
     <div className="Footer-container">
       <img src="./img/ReLogo.png" width="80" style={{ marginTop: "5vh" }}></img>
       <div className="Footer-btn-container">
-        <GeneralLinkButton href="/Home" className="Footer-btn">
+        <GeneralLinkButton href="/" className="Footer-btn">
           Inicio
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Home" className="Footer-btn">
+        <GeneralLinkButton href="/Quienes_somos" className="Footer-btn">
           Quienes Somos
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Home" className="Footer-btn">
+        <GeneralLinkButton href="/Equipo" className="Footer-btn">
           Equipo
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Home" className="Footer-btn">
+        <GeneralLinkButton href="/Proyectos" className="Footer-btn">
           Proyectos
         </GeneralLinkButton>
         <GeneralLinkButton href="/Contacto" className="Footer-btn">

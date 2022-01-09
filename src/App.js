@@ -1,15 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import "./index";
 import "./TextFont.css";
 import Home from "./screens/Home/Home";
 import CDE from "./screens/CDE/CDE";
 import Nav from "./components/Nav/Nav";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import PreFooter from "./components/PreFooter/PreFooter";
 import Contacto from "./screens/Contacto/Contacto";
@@ -18,35 +13,22 @@ import Qs from './screens/Qs/Qs';
 function App() {
 
   return (
-    <Router>
+    <>
       <Nav />
       <div className="MainContent">
-        <Switch>
-          <Route path="/Home">
-            <Home />
-          </Route>
-          <Route path="/Quienes_Somos">
-            <Qs/>
-          </Route>
-          <Route path="/Servicios">
-            Servicios
-          </Route>
-          <Route path="/CasosDeExito">
-            <CDE />
-          </Route>
-          <Route path="/Proyectos">
-            Proyectos
-          </Route>
-          <Route path="/Contacto">
-            <Contacto />
-          </Route>
-          <Redirect from="/*" to="Home" />
-        </Switch>
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/Quienes_Somos" element={<Qs />} />
+          <Route path="/Servicios" />
+          <Route path="/CasosDeExito" element={<CDE />} />
+          <Route path="/Proyectos" />
+          <Route path="/Contacto" element={<Contacto />} />
+        </Routes>
       </div>
-      <PreFooter/>
+      <PreFooter />
       <Footer />
-    </Router>
-    
+    </>
+
   );
 }
 
