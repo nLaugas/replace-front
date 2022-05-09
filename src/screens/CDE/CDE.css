@@ -1,5 +1,9 @@
 @media screen and (max-width: 1000px) {
-    .Header1-NoRadius {
-        margin-bottom: -165px;
-    }
+  .Header1-NoRadius {
+    margin-bottom: -165px;
+  }
+}
+
+.cde-container {
+  background: linear-gradient(90deg, #0d1117 100%, #211930 100%);
 }

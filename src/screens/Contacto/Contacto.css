@@ -1,58 +1,80 @@
 .Header1-NoRadius {
   border-bottom-right-radius: unset;
   height: max-content;
+  display: flex;
+  flex-direction: column;
 }
 
-.Contacto-title{
+@media screen and (min-width: 1000px) {
+  .Header1-NoRadius {
+    flex-direction: row;
+  }
+}
+
+.Contacto-title {
   padding-top: 10px;
 }
 
-.Contacto-formContainer{
+.Contacto-formContainer {
   padding: 30px 0;
 }
 
-.ContactoData-container{
+.ContactoData-container {
   padding: 30px 0;
 }
 
-.ContactoData-title{
+.ContactoData-title {
   font-weight: 600;
   padding-bottom: 15px;
 }
 
-.Contacto-greyColor{
+.Contacto-greyColor {
   color: rgba(255, 255, 255, 0.4);
 }
 
-@media screen and (min-width: 1000px){
-  .Contacto-formContainer{
+@media screen and (min-width: 1000px) {
+  .Contacto-formContainer {
     max-width: 30vw;
     padding-right: 10vw;
   }
 }
 
-.Contacto-mapa-container{
+.Contacto-mapa-container {
   display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
 }
 
-.mapa{
-  width: 2000px;
+.mapa {
+  width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+  object-position: 50% 50% ;
 }
 
-.punto-mapa{
+.punto-mapa {
   width: 35px;
-  top: calc(100vw/9.1);
+  top: calc(100vw / 9.1);
   left: calc(47.5vw);
   position: absolute;
 }
 
-@media screen and (max-width: 1440px){
-  .punto-mapa{
+@media screen and (max-width: 1440px) {
+  .punto-mapa {
     top: 130px;
     left: calc(47.5vw);
     position: absolute;
+  }
+}
+
+.Contacto-dataContainer {
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .Contacto-dataContainer {
+    margin: 0 auto;
   }
 }
