@@ -25,7 +25,7 @@ const Contacto = () => {
           )}
         />
       </Text1>
-      <Text1 className="start description">
+      <Text1 className="start description Contacto-dataContainer">
         <div className="ContactoData-container">
           <div className="ContactoData-title">Email</div>
           <div className="Contacto-greyColor">hello@replace.com.ar</div>
@@ -44,8 +44,8 @@ const Contacto = () => {
       
     </Header1>
     <div className="Contacto-mapa-container">
-      <img className="mapa" src="./svg/mapa.svg"></img>
-      <img className="punto-mapa" src="./svg/punto-mapa.svg"></img>
+      <img className="mapa" src="./img/mapa.png"></img>
+      {/* <img className="punto-mapa" src="./svg/punto-mapa.svg"></img> */}
     </div>
     </>
   );

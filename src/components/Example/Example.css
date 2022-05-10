@@ -1,47 +1,54 @@
-.examples-container{
-    background: linear-gradient(90deg, #0D1117 100%, #211930 100%);
-    padding: 10px 0px 100px 0;
-    display: flex;
+.examples-container {
+  background: linear-gradient(90deg, #0d1117 100%, #211930 100%);
+  padding: 10px 0px 100px 0;
+  display: flex;
+  margin-bottom: 4rem;
 }
 
-.examples-container .img{
-    position: absolute;
-    right: 0;
-    z-index: 10;
+.examples-container .img {
+  position: absolute;
+  right: 0;
+  z-index: 10;
 }
 
-.examples-container .example-info{
-    margin-top: 60px;
-    width: 30%;
-    padding: 0 10vw;
-    background: #6e40c9;
+@media screen and (min-width: 1200px) {
+  .examples-container .img {
+    width: 55%;
+  }
+}
+
+.examples-container .example-info {
+  margin-top: 60px;
+  width: 30%;
+  padding: 0 10vw;
+  background: #6e40c9;
+  justify-content: center;
+  height: 330px;
+}
+
+.examples-container .example-info img {
+  width: 30%;
+}
+
+.btn-example {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .examples-container {
     justify-content: center;
-    height: 330px;
-}
+  }
 
-.examples-container .example-info img{
-    width: 30%;
-}
+  .examples-container .img {
+    width: 100%;
+  }
 
-.btn-example{
-    padding-top: 20px;
-}
+  .examples-container .example-info {
+    margin-top: 130px;
+    width: 70%;
+  }
 
-@media screen and (max-width: 700px) {
-    .examples-container{
-        justify-content: center;
-    }
-    
-    .examples-container .img{
-        width: 100%;
-    }
-    
-    .examples-container .example-info{
-        margin-top: 130px;
-        width: 70%;
-    }
-    
-    .examples-container .example-info img{
-        width: 50%;
-    }
+  .examples-container .example-info img {
+    width: 50%;
+  }
 }
