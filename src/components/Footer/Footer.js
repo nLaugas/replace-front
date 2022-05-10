@@ -46,7 +46,7 @@ function Footer() {
         </a>
         <a
           className="Footer-social"
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/replaceit/"
           target="_blank"
           rel="noreferrer"
         >
