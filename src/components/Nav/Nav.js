@@ -52,24 +52,24 @@ function Nav() {
           >
             Quienes somos
           </GeneralLinkButton>
-          <GeneralLinkButton
+          {/* <GeneralLinkButton
             href="/Servicios"
             className={`Nav-btn ${OnScreen === 2 ? "Nav-btn-InScreen" : ""}`}
           >
             Servicios
-          </GeneralLinkButton>
+          </GeneralLinkButton> */}
           <GeneralLinkButton
             href="/CasosDeExito"
             className={`Nav-btn ${OnScreen === 3 ? "Nav-btn-InScreen" : ""}`}
           >
             Casos de éxito
           </GeneralLinkButton>
-          <GeneralLinkButton
+          {/* <GeneralLinkButton
             href="/Proyectos"
             className={`Nav-btn ${OnScreen === 4 ? "Nav-btn-InScreen" : ""}`}
           >
             Proyectos
-          </GeneralLinkButton>
+          </GeneralLinkButton> */}
           <GeneralLinkButton
             href="/Contacto"
             className={`Nav-btn ${OnScreen === 5 ? "Nav-btn-InScreen" : ""}`}

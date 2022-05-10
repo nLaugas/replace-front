@@ -1,5 +1,6 @@
 import "./Footer.css";
 import GeneralLinkButton from "../GeneralLinkButton/GeneralLinkButton";
+import pdf from "../../assets/docs/lorem-ipsum.pdf";
 
 function Footer() {
   return (
@@ -12,25 +13,43 @@ function Footer() {
         <GeneralLinkButton href="/Quienes_somos" className="Footer-btn">
           Quienes Somos
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Equipo" className="Footer-btn">
-          Equipo
+        {/* <GeneralLinkButton href="/Servicios" className="Footer-btn">
+          Servicios
+        </GeneralLinkButton> */}
+        <GeneralLinkButton href="/CasosDeExito" className="Footer-btn">
+          Casos de Exito
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Proyectos" className="Footer-btn">
+        {/* <GeneralLinkButton href="/Proyectos" className="Footer-btn">
           Proyectos
-        </GeneralLinkButton>
+        </GeneralLinkButton> */}
         <GeneralLinkButton href="/Contacto" className="Footer-btn">
           Contacto
         </GeneralLinkButton>
       </div>
 
       <div className="Footer-social-container">
-        <a className="Footer-social" href="https://www.instagram.com">
+        <a
+          className="Footer-social"
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="./img/InstagramLogo.png"></img>
         </a>
-        <a className="Footer-social" href="https://www.facebook.com">
+        <a
+          className="Footer-social"
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="./img/FacebookLogo.png"></img>
         </a>
-        <a className="Footer-social" href="https://www.linkedin.com">
+        <a
+          className="Footer-social"
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="./img/LinkedInLogo.png"></img>
         </a>
       </div>
@@ -38,24 +57,30 @@ function Footer() {
       <div className="Footer-footer">
         <div>© 2021 Replace. Todos los derechos reservados.</div>
         <div>
-          <div
-            onClick={() => (window.location.pathname = "/Home")}
+          <a
+            href={pdf}
             className="btn-noselect"
+            target="_blank"
+            rel="noreferrer"
           >
             Política de privacidad &nbsp;
-          </div>
-          <div
-            onClick={() => (window.location.pathname = "/Home")}
+          </a>
+          <a
+            href={pdf}
             className="btn-noselect"
+            target="_blank"
+            rel="noreferrer"
           >
             &nbsp;Política de Cookies&nbsp;
-          </div>
-          <div
-            onClick={() => (window.location.pathname = "/Home")}
+          </a>
+          <a
+            href={pdf}
             className="btn-noselect"
+            target="_blank"
+            rel="noreferrer"
           >
             &nbsp;Términos y Condiciones
-          </div>
+          </a>
         </div>
       </div>
     </div>
