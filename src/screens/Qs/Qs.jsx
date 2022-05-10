@@ -6,7 +6,6 @@ import Text1 from "../../components/Text1/Text1";
 
 export default function Qs() {
     return (
-        <div>
             <Header1 className="Header1-NoRadius HeaderQs">
                 <Text1>
                     <ReplaceText text="NOSOTROS" />
@@ -19,6 +18,5 @@ export default function Qs() {
                 </Text1>
                 <div className="box-violet"></div>
             </Header1>
-        </div>
     )
 }

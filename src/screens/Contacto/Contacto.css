@@ -40,13 +40,19 @@
 }
 
 .Contacto-mapa-container {
+<<<<<<< HEAD
+=======
+  margin-top: -3px;
+>>>>>>> 044fd19ca2075049b94753d53ca2ff04801c5c11
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: relative;
 }
 
 .mapa {
+<<<<<<< HEAD
   width: 100%;
   min-height: 600px;
   object-fit: cover;
@@ -78,3 +84,19 @@
     margin: 0 auto;
   }
 }
+=======
+  min-height: 350px;
+  object-fit: contain;
+}
+
+.Contacto-dataContainer {
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .Contacto-dataContainer {
+    margin: 0 auto;
+  }
+}
+>>>>>>> 044fd19ca2075049b94753d53ca2ff04801c5c11
