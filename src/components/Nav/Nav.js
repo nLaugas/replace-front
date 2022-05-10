@@ -52,24 +52,40 @@ function Nav() {
           >
             Quienes somos
           </GeneralLinkButton>
+<<<<<<< HEAD
           {/* <GeneralLinkButton
+=======
+          <GeneralLinkButton
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
             href="/Servicios"
             className={`Nav-btn ${OnScreen === 2 ? "Nav-btn-InScreen" : ""}`}
           >
             Servicios
+<<<<<<< HEAD
           </GeneralLinkButton> */}
+=======
+          </GeneralLinkButton>
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
           <GeneralLinkButton
             href="/CasosDeExito"
             className={`Nav-btn ${OnScreen === 3 ? "Nav-btn-InScreen" : ""}`}
           >
             Casos de éxito
           </GeneralLinkButton>
+<<<<<<< HEAD
           {/* <GeneralLinkButton
+=======
+          <GeneralLinkButton
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
             href="/Proyectos"
             className={`Nav-btn ${OnScreen === 4 ? "Nav-btn-InScreen" : ""}`}
           >
             Proyectos
+<<<<<<< HEAD
           </GeneralLinkButton> */}
+=======
+          </GeneralLinkButton>
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
           <GeneralLinkButton
             href="/Contacto"
             className={`Nav-btn ${OnScreen === 5 ? "Nav-btn-InScreen" : ""}`}

@@ -1,5 +1,9 @@
 @media screen and (max-width: 1000px) {
+<<<<<<< HEAD
   .Header1-NoRadius {
+=======
+  .Header1-LessMarginCDE {
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
     margin-bottom: -165px;
   }
 }

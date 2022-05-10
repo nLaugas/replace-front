@@ -7,7 +7,11 @@ import Example from '../../components/Example/Example';
 export default function CDE() {
     return (
         <div className='cde-container'>
+<<<<<<< HEAD
             <Header1 className="Header1-NoRadius">
+=======
+            <Header1 className="Header1-LessMarginCDE">
+>>>>>>> 5ef424de842c82a4a4be68dc154ca05b5264a9e0
                 <Text1>
                     <ReplaceText text="EXITO" />
                     <div className="title start">Casos de exito</div>
