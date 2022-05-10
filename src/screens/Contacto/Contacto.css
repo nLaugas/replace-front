@@ -49,10 +49,8 @@
 }
 
 .mapa {
-  width: 100%;
-  min-height: 600px;
-  object-fit: cover;
-  object-position: 50% 50% ;
+  min-height: 350px;
+  object-fit: contain;
 }
 
 .punto-mapa {

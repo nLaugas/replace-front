@@ -7,7 +7,7 @@ import Example from "../../components/Example/Example";
 export default function CDE() {
   return (
     <div className="cde-container">
-      <Header1 className="Header1-NoRadius">
+      <Header1 className="Header1-NoRadius-CDE">
         <Text1>
           <ReplaceText text="EXITO" />
           <div className="title start">Casos de exito</div>
