@@ -21,7 +21,6 @@ function Nav() {
   });
 
   return (
-    <div>
       <div className="Nav-container">
         <div className="Nav-img-container">
           <GeneralLinkButton href="/" className="Nav-align-center">
@@ -78,7 +77,6 @@ function Nav() {
           </GeneralLinkButton>
         </div>
       </div>
-    </div>
   );
 }
 

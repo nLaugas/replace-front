@@ -74,11 +74,11 @@
     padding: 0;
     margin: 0 0;
     width: 100vw;
-    height: 450px;
+    max-height: 300px;
     padding: 5vh 0;
     flex-direction: column;
     background: linear-gradient(90deg, #0D1117 100%, #211930 100%);
-    transition: all 0.5s;
+    transition: all .3s ease-out;
   }
 
   .Nav-btn {
@@ -88,7 +88,7 @@
 
   .NoHeight {
     padding: 0;
-    height: 0 !important;
+    max-height: 0 !important;
   }
 }
 
