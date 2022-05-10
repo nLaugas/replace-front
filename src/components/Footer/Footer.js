@@ -17,7 +17,7 @@ function Footer() {
           Servicios
         </GeneralLinkButton> */}
         <GeneralLinkButton href="/CasosDeExito" className="Footer-btn">
-          Casos de Exito
+          Casos de éxito
         </GeneralLinkButton>
         {/* <GeneralLinkButton href="/Proyectos" className="Footer-btn">
           Proyectos
