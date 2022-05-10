@@ -61,3 +61,10 @@
   right: 2.5vw;
   top: 50%;
 }
+
+.imgCarrousel{
+  max-width: 200px;
+    height: auto;
+    width: auto;
+    align-self: center;
+}

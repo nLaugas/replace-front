@@ -36,23 +36,20 @@ function Clientes() {
       <div>
         <div className="Cliente-container" id="clientes">
           <div className="Clientes-CubeA"></div>
+          <img src="/img/errepar-logo.png" className="Cliente description" />
+          <img src="/img/itbc-logo.png" className="Cliente description" />
           <img
-            src="/img/errepar-logo.png"
-            className="Cliente description"
-          ></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
-          <img src="/img/itbc-logo.png" className="Cliente description"></img>
+            src="/img/partnersLogo/intermedia.png"
+            className="Cliente description imgCarrousel"
+          />
+          <img
+            src="/img/partnersLogo/Adviters.png"
+            className="Cliente description imgCarrousel"
+          />
+          <img
+            src="/img/partnersLogo/TISA.png"
+            className="Cliente description imgCarrousel"
+          />
           <div className="Clientes-CubeB"></div>
         </div>
       </div>
