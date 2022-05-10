@@ -3,26 +3,46 @@ import GeneralLinkButton from "../GeneralLinkButton/GeneralLinkButton";
 import pdf from "../../assets/docs/lorem-ipsum.pdf";
 
 function Footer() {
+  function scrollToTop() {
+    window.scrollTo(0, window.screenTop);
+  }
+
   return (
     <div className="Footer-container">
       <img src="./img/ReLogo.png" width="80" style={{ marginTop: "5vh" }}></img>
       <div className="Footer-btn-container">
-        <GeneralLinkButton href="/" className="Footer-btn">
+        <GeneralLinkButton
+          href="/"
+          className="Footer-btn"
+          onClick={scrollToTop}
+        >
           Inicio
         </GeneralLinkButton>
-        <GeneralLinkButton href="/Quienes_somos" className="Footer-btn">
+        <GeneralLinkButton
+          href="/Quienes_somos"
+          className="Footer-btn"
+          onClick={scrollToTop}
+        >
           Quienes Somos
         </GeneralLinkButton>
-        {/* <GeneralLinkButton href="/Servicios" className="Footer-btn">
+        {/* <GeneralLinkButton href="/Servicios" className="Footer-btn" onClick={scrollToTop}>
           Servicios
         </GeneralLinkButton> */}
-        <GeneralLinkButton href="/CasosDeExito" className="Footer-btn">
+        <GeneralLinkButton
+          href="/CasosDeExito"
+          className="Footer-btn"
+          onClick={scrollToTop}
+        >
           Casos de éxito
         </GeneralLinkButton>
-        {/* <GeneralLinkButton href="/Proyectos" className="Footer-btn">
+        {/* <GeneralLinkButton href="/Proyectos" className="Footer-btn" onClick={scrollToTop}>
           Proyectos
         </GeneralLinkButton> */}
-        <GeneralLinkButton href="/Contacto" className="Footer-btn">
+        <GeneralLinkButton
+          href="/Contacto"
+          className="Footer-btn"
+          onClick={scrollToTop}
+        >
           Contacto
         </GeneralLinkButton>
       </div>
