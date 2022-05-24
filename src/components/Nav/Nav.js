@@ -21,62 +21,62 @@ function Nav() {
   });
 
   return (
-      <div className="Nav-container">
-        <div className="Nav-img-container">
-          <GeneralLinkButton href="/" className="Nav-align-center">
-            <img className="Nav-img" src="./img/Group.png" />
-          </GeneralLinkButton>
-          <img
-            onClick={() => setshowNavbar(!showNavbar)}
-            className="Nav-responsiveMenu-btn btn-noselect"
-            src="./img/Nav-responsive-btn.png"
-            id="Nav-responsiveMenu-btn"
-          ></img>
-        </div>
-        <div
-          className={`Nav-btn-container ${showNavbar ? "" : "NoHeight"}`}
-          onClick={() => {
-            setshowNavbar(!showNavbar);
-          }}
+    <div className="Nav-container">
+      <div className="Nav-img-container">
+        <GeneralLinkButton href="/" className="Nav-align-center">
+          <img className="Nav-img" src="./img/Group.png" />
+        </GeneralLinkButton>
+        <img
+          onClick={() => setshowNavbar(!showNavbar)}
+          className="Nav-responsiveMenu-btn btn-noselect"
+          src="./img/Nav-responsive-btn.png"
+          id="Nav-responsiveMenu-btn"
+        ></img>
+      </div>
+      <div
+        className={`Nav-btn-container ${showNavbar ? "" : "NoHeight"}`}
+        onClick={() => {
+          setshowNavbar(!showNavbar);
+        }}
+      >
+        <GeneralLinkButton
+          href="/"
+          className={`Nav-btn ${OnScreen === 0 ? "Nav-btn-InScreen" : ""}`}
         >
-          <GeneralLinkButton
-            href="/"
-            className={`Nav-btn ${OnScreen === 0 ? "Nav-btn-InScreen" : ""}`}
-          >
-            Inicio
-          </GeneralLinkButton>
-          <GeneralLinkButton
+          Inicio
+        </GeneralLinkButton>
+        {/* <GeneralLinkButton
             href="/Quienes_somos"
             className={`Nav-btn ${OnScreen === 1 ? "Nav-btn-InScreen" : ""}`}
           >
             Quienes somos
-          </GeneralLinkButton>
-          {/* <GeneralLinkButton
+          </GeneralLinkButton> */}
+        {/* <GeneralLinkButton
             href="/Servicios"
             className={`Nav-btn ${OnScreen === 2 ? "Nav-btn-InScreen" : ""}`}
           >
             Servicios
           </GeneralLinkButton> */}
-          <GeneralLinkButton
-            href="/CasosDeExito"
-            className={`Nav-btn ${OnScreen === 3 ? "Nav-btn-InScreen" : ""}`}
-          >
-            Casos de éxito
-          </GeneralLinkButton>
-          {/* <GeneralLinkButton
+        <GeneralLinkButton
+          href="/CasosDeExito"
+          className={`Nav-btn ${OnScreen === 3 ? "Nav-btn-InScreen" : ""}`}
+        >
+          Casos de éxito
+        </GeneralLinkButton>
+        {/* <GeneralLinkButton
             href="/Proyectos"
             className={`Nav-btn ${OnScreen === 4 ? "Nav-btn-InScreen" : ""}`}
           >
             Proyectos
           </GeneralLinkButton> */}
-          <GeneralLinkButton
-            href="/Contacto"
-            className={`Nav-btn ${OnScreen === 5 ? "Nav-btn-InScreen" : ""}`}
-          >
-            Contacto
-          </GeneralLinkButton>
-        </div>
+        <GeneralLinkButton
+          href="/Contacto"
+          className={`Nav-btn ${OnScreen === 5 ? "Nav-btn-InScreen" : ""}`}
+        >
+          Contacto
+        </GeneralLinkButton>
       </div>
+    </div>
   );
 }
 
